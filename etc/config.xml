@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <piotrjaworski_internallinking>
+            <general>
+                <link_location>catalog_product_view</link_location>
+                <link_counter>3</link_counter>
+            </general>                
+        </piotrjaworski_internallinking>
+    </default>
+</config>

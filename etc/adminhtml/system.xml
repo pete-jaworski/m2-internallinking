@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="appe_internallinking" translate="label" sortOrder="200">
+            <label>APPE Internal Linking</label>
+        </tab>
+        <section id="piotrjaworski_internallinking" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Internal Linking</label>
+            <tab>appe_internallinking</tab>
+            <resource>PiotrJaworski_InternalLinking::all</resource>
+            
+            
+            
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Internal Links Options</label>
+                <field id="link_location" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Target Locations</label>
+                    <source_model>PiotrJaworski\InternalLinking\Model\Config\TargetLocation</source_model>
+                </field>
+                <field id="link_counter" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Max number of links per page</label>
+                </field>
+            </group>
+        </section>
+    </system> 
+</config>

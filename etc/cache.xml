@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="internallinking_cache" translate="label,description" instance="PiotrJaworski\InternalLinking\Model\Cache">
+        <label>Internal Linking</label>
+        <description>Internal Links Collection</description>
+    </type>
+</config>

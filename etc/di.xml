@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <preference for="PiotrJaworski\InternalLinking\Api\Data\LinkSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="PiotrJaworski\InternalLinking\Api\Data\LinkInterface" type="PiotrJaworski\InternalLinking\Model\Link" />
+    <preference for="PiotrJaworski\InternalLinking\Api\LinkRepositoryInterface" type="PiotrJaworski\InternalLinking\Model\LinkRepository" />
+    <preference for="PiotrJaworski\InternalLinking\Helper\LinkBuilderInterface" type="PiotrJaworski\InternalLinking\Helper\LinkBuilder" />
+    
+    <type name="Magento\Catalog\Model\ProductRepository">
+        <plugin name="pete_jaworski_internallinking_product" type="\PiotrJaworski\InternalLinking\Plugin\ProductPlugin" />
+    </type>
+    <type name="Magento\Catalog\Model\CategoryRepository"> 
+        <plugin name="pete_jaworski_internallinking_category" type="\PiotrJaworski\InternalLinking\Plugin\CategoryPlugin" />
+    </type>     
+    <type name="Magento\Cms\Api\Data\PageInterface"> 
+        <plugin name="pete_jaworski_internallinking_page" type="\PiotrJaworski\InternalLinking\Plugin\PagePlugin" />
+    </type>      
+    
+</config>
